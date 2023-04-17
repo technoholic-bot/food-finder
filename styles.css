@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --body-font: "Libre Franklin", sans-serif;
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --white: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* Main Container */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.4rem;
+}
+/* Title Section */
+.title-section {
+  margin-top: -0.7rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
+
+.title-section h1 {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.soon {
+  font-weight: 700;
+  color: initial;
+}
+
+.title-info {
+  color: var(--very-dark-blue);
+}
+
+/* Statistics IMG */
+.statistics-img {
+  background-image: url("images/hero-desktop.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 50rem;
+  width: 40rem;
+  margin-top: 4.3rem;
+}
+
+@media (hover: hover) {
+  .social-media .fa-brands:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition: all ease-in-out 0.3s;
+  }
+  .input-section button:hover {
+    background-color: var(--pale-blue);
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .statistics-img {
+    background-size: 70%;
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 701px) {
+}
+
+@media screen and (max-width: 500px) {
+  .statistics-img {
+    background-size: 80%;
+    width: 20rem;
+  }
+}
